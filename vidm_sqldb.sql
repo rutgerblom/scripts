@@ -1,9 +1,3 @@
-/*
-Values within angle brackets (< >) are example values. When replacing the example value,
-remove the angle brackets. The database name is case sensitive. Make sure you enter the database name the same in all instances.
-*/
-
-
 CREATE DATABASE vidm
 COLLATE Latin1_General_CS_AS;
 ALTER DATABASE vidm SET READ_COMMITTED_SNAPSHOT ON;
