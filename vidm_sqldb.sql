@@ -6,24 +6,24 @@ GO
 IF NOT EXISTS
 (SELECT name
 FROM master.sys.server_principals
-WHERE name=N'DEMO\Administrator')
+WHERE name=N'DEMO\serbl')
 BEGIN
-CREATE LOGIN [DEMO\Administrator] FROM WINDOWS;
+CREATE LOGIN [DEMO\serbl] FROM WINDOWS;
 END
 GO
 
 USE vidm; 
 IF EXISTS (SELECT * FROM sys.database_principals WHERE name=N'DEMO\Administrator')
-DROP USER [DEMO\Administrator]
+DROP USER [DEMO\serbl]
 GO
 
-CREATE USER [DEMO\Administrator] FOR LOGIN [DEMO\Administrator] 
+CREATE USER [DEMO\serbl] FOR LOGIN [DEMO\serbl] 
 WITH DEFAULT_SCHEMA=saas;
 GO
 
-CREATE SCHEMA saas AUTHORIZATION "DEMO\Administrator"
-GRANT ALL ON DATABASE::vidm TO "DEMO\Administrator";
+CREATE SCHEMA saas AUTHORIZATION "DEMO\serbl"
+GRANT ALL ON DATABASE::vidm TO "DEMO\serbl";
 GO
 
-ALTER ROLE db_owner ADD MEMBER "DEMO\Administrator";
+ALTER ROLE db_owner ADD MEMBER "DEMO\serbl";
 GO
