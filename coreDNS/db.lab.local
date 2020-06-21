@@ -1,0 +1,39 @@
+$ORIGIN lab.local.
+@       3600 IN SOA ns1.lab.local. mail.lab.local. (
+                                2020062001 ; serial
+                                7200       ; refresh (2 hours)
+                                3600       ; retry (1 hour)
+                                1209600    ; expire (2 weeks)
+                                3600       ; minimum (1 hour)
+                                )
+
+        3600 IN NS a.iana-servers.net.
+        3600 IN NS b.iana-servers.net.
+
+ns1                     IN A    10.2.129.19
+pod-230-vcenter         IN A    10.203.230.5
+pod-230-nsxt-lm         IN A    10.203.230.8
+pod-230-esxi-11         IN A    10.203.230.11
+pod-230-esxi-12         IN A    10.203.230.12
+pod-230-esxi-13         IN A    10.203.230.13
+pod-230-esxi-21         IN A    10.203.230.21
+pod-230-esxi-22         IN A    10.203.230.22
+pod-230-esxi-23         IN A    10.203.230.23
+pod-230-en01            IN A    10.203.230.61
+pod-230-en02            IN A    10.203.230.62
+pod-230-esxi-91         IN A    10.203.230.91
+pod-230-esxi-92         IN A    10.203.230.92
+pod-230-esxi-93         IN A    10.203.230.93
+pod-240-vcenter         IN A    10.203.240.5
+pod-240-nsxt-lm         IN A    10.203.240.8
+pod-240-esxi-11         IN A    10.203.240.11
+pod-240-esxi-12         IN A    10.203.240.12
+pod-240-esxi-13         IN A    10.203.240.13
+pod-240-esxi-21         IN A    10.203.240.21
+pod-240-esxi-22         IN A    10.203.240.22
+pod-240-esxi-23         IN A    10.203.240.23
+pod-240-en01            IN A    10.203.240.61
+pod-240-en02            IN A    10.203.240.62
+pod-240-esxi-91         IN A    10.203.240.91
+pod-240-esxi-92         IN A    10.203.240.92
+pod-240-esxi-93         IN A    10.203.240.93
