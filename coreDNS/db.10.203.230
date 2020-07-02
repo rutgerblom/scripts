@@ -1,0 +1,27 @@
+$TTL    604800
+@       IN      SOA     ns1.lab.local. mail.lab.local. (
+                              1         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+; name servers - NS records
+        IN      NS      ns1.lab.local.
+
+;
+; PTR Records
+5       IN PTR  pod-230-vcenter.lab.local.
+7       IN PTR  pod-230-nsxt-gm.lab.local.
+8       IN PTR  pod-230-nsxt-lm.lab.local.
+11      IN PTR  pod-230-esxi-11.lab.local.
+12      IN PTR  pod-230-esxi-12.lab.local.
+13      IN PTR  pod-230-esxi-13.lab.local.
+21      IN PTR  pod-230-esxi-21.lab.local.
+22      IN PTR  pod-230-esxi-22.lab.local.
+23      IN PTR  pod-230-esxi-23.lab.local.
+61      IN PTR  pod-230-en01.lab.local.
+62      IN PTR  pod-230-en02.lab.local.
+91      IN PTR  pod-230-esxi-91.lab.local.
+92      IN PTR  pod-230-esxi-92.lab.local.
+93      IN PTR  pod-230-esxi-93.lab.local.
